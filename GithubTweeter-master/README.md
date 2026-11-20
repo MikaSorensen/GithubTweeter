@@ -1,0 +1,51 @@
+# Exercise to practice collaborative forking workflow
+We will run this exercise in groups. Groups can choose a number or a name.
+
+## Objectives:
+
+* Learn how to fork, modify the fork, and file a pull request towards forked repo
+* Learn how to update your fork with upstream changes.
+
+## Part A: Fork and clone
+First fork this repository on GitHub into your namespace and then clone the fork to your computer.
+
+## Part B: Modify and commit
+Before we do any modification, we create a new branch and switch to it - this is a good reflex and a good practice. On the new branch add a new file like: GroupGenZ.java.
+
+if you are adventurous, add a file with the same name as a other group to see what happens.
+
+This file should contain a function called tweet() which returns a string of maximum 280 characters (Twitter):
+```
+    public String tweet()
+    {
+        return String.format("%s says this is great!", this.getClass().getName());
+    }
+```
+The file Main.java must be updated to call your tweet() method defined in your new file.
+
+Test it before you commit your change:
+```
+run Main.main();
+```
+group XX says: please replace this boring sentence with something more fun
+
+If it works, commit the change.
+
+## Part C: Push your changes to the fork
+Once you see your sentence correctly printed, commit and push the branch to your fork.
+
+Please mind that your changes will be public on GitHub (but you can delete them later).
+
+## Part D: File a pull request
+Then file a pull request from the branch on your fork towards the master branch on the repository where you forked from.
+
+Wait here until we integrate all pull requests into the central repo together on the big screen.
+
+## Part E: Update your fork
+We do this part after the contributions from all groups have been integrated.
+
+Once this is done, practice to update your forked repo with the upstream changes and verify that you got the files created by other groups:
+```
+run Main.main();
+```
+Make sure that the contributions from other groups are not only on your local repository but really also end up in your fork.
